@@ -2,9 +2,9 @@
 
 ## Apa Itu Computational Thinking?
 
-**Computational Thinking (CT)** adalah pendekatan sistematis untuk memecahkan masalah yang dapat diselesaikan secara efektif, efisien, dan seringkali bisa diotomatisasi oleh komputer.
+**Computational Thinking (CT)** adalah proses berpikir sistematis yang digunakan untuk memecahkan masalah secara logis, terstruktur, dan dapat diterapkan dalam bentuk algoritma yang dijalankan oleh komputer.
 
-> Computational Thinking bukan tentang menjadi programmer, tetapi tentang berpikir seperti seorang programmer.
+> Computational Thinking bukan sekadar keterampilan coding, melainkan cara berpikir yang membantu kita memecahkan masalah dalam kehidupan sehari-hari maupun dalam teknologi.
 
 ---
 
@@ -19,72 +19,100 @@
 
 ---
 
-## Kenapa Computational Thinking Penting?
+## Penjelasan Masing-Masing Pilar dengan Contoh
 
-* Memahami alur sebelum ngoding.
-* Mempermudah membuat algoritma yang rapi.
-* Meminimalisir kesalahan.
-* Membantu berpikir logis dan terstruktur.
-* Dapat diaplikasikan dalam semua bidang (bukan hanya IT).
+### 1. Decomposition (Dekonstruksi)
+
+**Definisi:** Memecah masalah besar menjadi tugas-tugas kecil yang lebih mudah dikelola.
+**Contoh:** Saat membuat aplikasi toko online, kita memecah menjadi:
+
+* Fitur input produk.
+* Fitur keranjang belanja.
+* Fitur pembayaran.
+* Fitur laporan.
 
 ---
 
-## Studi Kasus: Menghitung Total Belanjaan
+### 2. Pattern Recognition (Pengenalan Pola)
 
-### Deskripsi Masalah:
+**Definisi:** Mengidentifikasi pola atau kemiripan antar masalah untuk menyusun solusi yang efisien.
+**Contoh:** Semua produk memiliki harga dan jumlah yang akan dihitung. Pola penghitungan total belanja selalu berupa perkalian harga dan jumlah produk.
+
+---
+
+### 3. Abstraction (Abstraksi)
+
+**Definisi:** Mengabaikan informasi yang tidak relevan dan fokus pada elemen penting dari masalah.
+**Contoh:** Untuk menghitung belanja, kita hanya perlu fokus pada harga dan jumlah produk, tanpa memikirkan warna atau merek produk.
+
+---
+
+### 4. Algorithm Design (Perancangan Algoritma)
+
+**Definisi:** Menyusun langkah-langkah logis dan sistematis yang dapat dijalankan oleh komputer.
+**Contoh:**
+
+* Input harga barang.
+* Hitung total belanja.
+* Jika belanja melebihi batas, berikan diskon.
+* Cetak total yang harus dibayar.
+
+---
+
+## Mengapa Computational Thinking Penting?
+
+* Mempermudah membuat algoritma dan kode yang rapi.
+* Mengurangi potensi kesalahan saat memecahkan masalah.
+* Dapat diterapkan di berbagai bidang seperti kesehatan, keuangan, logistik, pendidikan, dan lainnya.
+* Mempermudah pembelajaran pemrograman dasar.
+* Membangun pola pikir logis dan sistematis.
+
+---
+
+# Studi Kasus 1: Menghitung Total Belanjaan
+
+## Deskripsi Masalah
 
 Seorang kasir ingin membuat sistem sederhana untuk menghitung total belanjaan pelanggan. Jika total belanja melebihi Rp 200.000, pelanggan mendapatkan diskon 10%.
 
 ---
 
-## Step 1: Decomposition
+## Langkah-Langkah Computational Thinking
 
-### Memecah Masalah
+### Decomposition
 
 * Input jumlah barang.
 * Input harga setiap barang.
 * Hitung total harga.
-* Jika total harga > Rp 200.000, diskon 10%.
-* Cetak total pembayaran.
+* Jika total harga > Rp 200.000, berikan diskon 10%.
+* Tampilkan total pembayaran.
 
----
+### Pattern Recognition
 
-## Step 2: Pattern Recognition
+* Semua barang memiliki harga.
+* Pola perhitungan total selalu penjumlahan harga.
+* Diskon hanya berlaku jika total melebihi Rp 200.000.
 
-### Pola yang Terlihat
+### Abstraction
 
-* Setiap barang memiliki harga.
-* Perhitungan total adalah proses penjumlahan.
-* Diskon hanya terjadi jika total harga melebihi batas.
+* Fokus pada harga barang dan total belanja.
+* Abaikan jenis barang, pembayaran tunai atau non-tunai.
 
----
+### Algorithm Design
 
-## Step 3: Abstraction
-
-### Fokus Utama
-
-* Hanya menghitung harga dan diskon.
-* Mengabaikan: jenis barang, metode pembayaran, pajak, dsb.
-
----
-
-## Step 4: Algorithm Design
-
-### Menyusun Langkah Solusi
-
-1. Minta input jumlah barang.
-2. Input harga setiap barang (diulang).
+1. Input jumlah barang.
+2. Ulangi input harga setiap barang.
 3. Hitung total harga.
-4. Jika total > 200.000, hitung diskon 10%.
-5. Tampilkan total akhir.
+4. Jika total harga > Rp 200.000, hitung diskon 10%.
+5. Tampilkan total akhir yang harus dibayar.
 
 ---
 
-## Flowchart Proses
+## Flowchart
 
 ```plaintext
 +------------------+
-|     Mulai        |
+|      Mulai       |
 +------------------+
          |
          v
@@ -155,7 +183,7 @@ END
 
 ---
 
-## Implementasi Koding Python
+## Implementasi Python
 
 ```python
 # Program Menghitung Total Belanjaan dengan Diskon
@@ -185,19 +213,148 @@ print(f"Total yang harus dibayar: Rp {total:,.2f}")
 
 ---
 
-## Kesimpulan
+# Studi Kasus 2: Sistem Penilaian Mahasiswa
 
-| Aspek      | Penjelasan                                      |
-| ---------- | ----------------------------------------------- |
-| Tujuan CT  | Memecah masalah, mengenali pola, membuat solusi |
-| Pentingnya | Menyusun langkah sebelum coding                 |
-| Hasil      | Membantu membuat program lebih rapi dan logis   |
+## Deskripsi Masalah
+
+Hitung nilai akhir mahasiswa dengan bobot:
+
+* Tugas: 30%
+* UTS: 30%
+* UAS: 40%
+
+Tentukan kelulusan:
+
+* Lulus jika nilai akhir ≥ 70
+* Tidak lulus jika nilai akhir < 70
 
 ---
 
-## Tambahan: Tips Computational Thinking
+## Langkah-Langkah Computational Thinking
 
-* Selalu mulai dari **dekomposisi** masalah.
-* Gunakan **flowchart** atau **pseudocode** sebelum coding.
-* Berlatih dengan masalah sederhana, lalu tingkatkan kompleksitas.
-* Jangan langsung menulis kode tanpa pemahaman alur.
+### Decomposition
+
+* Input nama mahasiswa.
+* Input nilai Tugas, UTS, UAS.
+* Hitung nilai akhir.
+* Tentukan kelulusan.
+* Cetak hasil.
+
+### Pattern Recognition
+
+* Semua mahasiswa memiliki 3 jenis nilai.
+* Kelulusan ditentukan oleh batas nilai yang sama (≥ 70).
+
+### Abstraction
+
+* Fokus pada input nama dan 3 nilai.
+* Abaikan jurusan, dosen, dan mata kuliah.
+
+### Algorithm Design
+
+1. Input nama mahasiswa.
+2. Input nilai Tugas, UTS, UAS.
+3. Hitung nilai akhir.
+4. Tentukan kelulusan.
+5. Cetak hasil.
+
+---
+
+## Pseudocode
+
+```plaintext
+START
+Input nama
+Input nilai_tugas
+Input nilai_uts
+Input nilai_uas
+
+nilai_akhir = (nilai_tugas * 0.3) + (nilai_uts * 0.3) + (nilai_uas * 0.4)
+
+IF nilai_akhir >= 70 THEN
+    status = "Lulus"
+ELSE
+    status = "Tidak Lulus"
+END IF
+
+Output nama, nilai_akhir, status
+END
+```
+
+---
+
+## Implementasi Python
+
+```python
+# Program Menghitung Nilai Akhir Mahasiswa
+
+# Input data mahasiswa
+nama = input("Masukkan nama mahasiswa: ")
+nilai_tugas = float(input("Masukkan nilai Tugas: "))
+nilai_uts = float(input("Masukkan nilai UTS: "))
+nilai_uas = float(input("Masukkan nilai UAS: "))
+
+# Hitung nilai akhir
+nilai_akhir = (nilai_tugas * 0.3) + (nilai_uts * 0.3) + (nilai_uas * 0.4)
+
+# Menentukan kelulusan
+if nilai_akhir >= 70:
+    status = "Lulus"
+else:
+    status = "Tidak Lulus"
+
+# Cetak hasil
+print("\n===== Hasil Akhir =====")
+print(f"Nama Mahasiswa : {nama}")
+print(f"Nilai Akhir    : {nilai_akhir:.2f}")
+print(f"Status         : {status}")
+```
+
+---
+
+# Latihan Soal Computational Thinking
+
+## Level 1 (Mudah)
+
+**Kasus:** Buat program untuk menghitung luas lingkaran.
+
+* Input jari-jari lingkaran.
+* Hitung luas dengan rumus L = π \* r².
+* Cetak hasil.
+
+---
+
+## Level 2 (Menengah)
+
+**Kasus:** Buat sistem penilaian 5 mata pelajaran, tentukan apakah siswa lulus (rata-rata nilai minimal 75).
+
+* Input nilai 5 mata pelajaran.
+* Hitung rata-rata.
+* Jika rata-rata ≥ 75, cetak "Lulus".
+* Jika rata-rata < 75, cetak "Tidak Lulus".
+
+---
+
+## Level 3 (Sulit)
+
+**Kasus:** Sistem parkir:
+
+* 2 jam pertama: Rp 5.000.
+* Jam berikutnya: Rp 3.000 per jam.
+* Jika total biaya parkir melebihi Rp 20.000, diskon 15%.
+
+Tentukan:
+
+* Biaya parkir total.
+* Cetak struk pembayaran.
+
+---
+
+# Kesimpulan
+
+| Aspek            | Penjelasan                                         |
+| ---------------- | -------------------------------------------------- |
+| Tujuan           | Memecah masalah, mengenali pola, membuat algoritma |
+| Pentingnya       | Menyusun langkah sebelum coding                    |
+| Hasil            | Membantu membuat program lebih rapi dan logis      |
+| Manfaat Tambahan | Meningkatkan pola pikir sistematis dan efisien     |
